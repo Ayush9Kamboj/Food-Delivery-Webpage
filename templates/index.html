@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'index.css'%}">
+
+    <title>Welcome</title>
+  </head>
+  <body>
+    <div id="loadingScreen" class="loading-1">
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
+    <div class="prog"><div class="progressBar"></div></div>
+    <center>
+        <header class="" style="z-index: 999;">
+            <nav>
+                <ul>
+                    <li class="navbarLink1"><a href="/templates/base.html" style= "color: white ; text-decoration: none; font-family: 'Times New Roman', Times, serif;">Zinggy</a></li>
+                    <li class="navbarLink2">
+                      <div class="searchBar">
+                        <input class="form-control " type="search" placeholder="What Are You Craving For..." aria-label="Search"><button class="btn btn-outline-success" type="submit">Search</button>
+                    </div>
+                    </li>
+                    <li class="navbarLink3"><a href="/myBasket" class="fa fa-shopping-cart"></a><br></li>
+                    <li class="navbarLink4"><button type="button" class="btn btn-primary"><a class="navbar-brand m-0" href="/admin" style="color: white;">Login</a></button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class=" container-fluid containerBelowNavBar" style="background-image: url(/static/images/main.jpg);">
+            <!-- <img src="/static/images/plate.png" alt="image1" class="plate">
+            <img src="/static/images/pizza.png" alt="image2" class="img1">
+            <img src="/static/images/noodles.png" alt="image3" class="img2">
+            <img src="/static/images/momo.png" alt="image4" class="img3"> -->
+
+            <!-- <div class="t1">
+              <div class="typewriter">
+                <h1>We Deliver Best at your Door Step</h1>
+              </div>
+            </div> -->
+
+            <div class="css-typing">
+              <p>
+                We deliver best at your
+              </p>
+              <p>
+                DOORSTEP
+              </p>
+            </div>
+          
+            <img src="/static/images/Untitled-1.png2-01.png" alt="image5" class="deliveryBoy">
+            <img src="/static/images/A2.png" alt="image6" class="marker">
+            <img src="/static/images/text box.png" alt="image7" class="textBox">
+            <h2>Order Delivered</h2>
+        </div>
+
+    </center>
+
+    <!-- <div class="searchBar">
+            <input class="form-control " type="search" placeholder="What Are You Craving For..." aria-label="Search"><button class="btn btn-outline-success" type="submit">Search</button>
+        </div> -->
+
+        <div class="container c1">
+          <div class="bs1">
+              <h1 class="text-center bsh1">Why Us?</h1>
+              <p>There is no doubt that therer are many other food delivery services available in the market but we asure you that once you try our service you will lovge it and placer it iver all those other delivery searvices because we are doing our best in our work and to provide you the best you can get.<strong>WE deliver your order in straight 10 min because we have a strong and big network of our delivery boys.</strong>Others take more then 10 min in making your order only but remember we are different ;)</p>
+              <h1 class="textNearSlideShow m-0">
+                <span>we serve</span>
+                <div class="messagee">
+                  <div class="word1">faster</div>
+                  <div class="word2">better</div>
+                  <div class="word3">fresher</div>
+                </div>
+            </h1>
+          </div>
+          <div class="bs2">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/static/images/slideShow1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/static/images/slideShow2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/static/images/slideShow3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+      </div>
+
+
+      <div class="container c2">
+        <h1 class="text-center h1_1">Select From Differnet Cuisines!</h1>
+        <div class="cardHover">
+          <a href="/northIndian" style="text-decoration: none;"><div id="indian" class="cuisines cuisines1 cuisines1img" style="background-image: url(/static/images/Indian.jpg);"><span class="text-center">NORTH INDIAN</span><div class="spanBackground"></div></div></a>
+          <a href="italian" style="text-decoration: none;"><div id="italian" class="cuisines cuisines2 cuisines2img" style="background-image: url(/static/images/italian.jpg);"><span class="text-center">ITALIAN</span><div class="spanBackground"></div></div></a>
+          <a href="chinese" style="text-decoration: none;"><div id="chinese" class="cuisines cuisines3 cuisines3img" style="background-image: url(/static/images/chinese.png);"><span class="text-center">CHINESE</span><div class="spanBackground"></div></div></a>
+          <a href="viewAll1" style="text-decoration: none;"><div id="viewAll1" class="cuisines cuisines4 cuisines4img" style="background-image: url(/static/images/viewAll.png);"><span class="text-center">VIEW All</span><div class="spanBackground"></div></div></a>
+          <!--<div class="cuisines cuisines5"><span class="text-center">Indian Cuisine</span><div class="spanBackground"></div><button type="button" class="btn btn-primary">Check It Out</button></div>
+          <div class="cuisines cuisines6">-<span class="text-center">Italian Cuisine</span><div class="spanBackground"></div><button type="button" class="btn btn-primary">Check It Out</button></div>
+          <div class="cuisines cuisines7"><span class="text-center">Chinese Cuisine</span><div class="spanBackground"></div><button type="button" class="btn btn-primary">Check It Out</button></div>
+          <div class="cuisines cuisines8"><span class="text-center">Chinese Cuisine</span><div class="spanBackground"></div><button type="button" class="btn btn-primary">Check It Out</button></div>-->
+        </div>
+      </div>
+
+      <div class="container c3 m-0" style="visibility: hidden; height: 11rem;">
+        <h1 class="text-center h1_11">Select From Restaurant Below!</h1>
+        <div class="cardHover">
+          <a href="dominos/" style="text-decoration: none;"><div id="dominos" class="cuisines cuisines1 restaurant1img"><span class="text-center">DOMINOS</span><div class="spanBackground"></div></div></a>
+          <a href="kfc/" style="text-decoration: none;"><div id="kfc" class="cuisines cuisines2 restaurant2img"><span class="text-center">KFC</span><div class="spanBackground"></div></div></a>
+          <a href="pizzaHut/" style="text-decoration: none;"><div id="pizzaHut" class="cuisines cuisines3 restaurant3img"><span class="text-center">PIZZA HUT</span><div class="spanBackground"></div></div></a>
+          <a href="viewAll2/" style="text-decoration: none;"><div id="viewAll2" class="cuisines cuisines4 restaurant4img"><span class="text-center">VIEW All</span><div class="spanBackground"></div></div></a>
+        </div>
+      </div>
+
+      <!-- <div class="container c3">
+        <h1 class="text-center h1_1">Select From Differnet Restaurant!</h1>
+        <div class="cardHover1">
+          <div class="restaurant restaurant1"><span>Dominos</span><div class="spanBackground"></div><button type="button" class="btn btn-primary">Check It Out</button></div>
+          <div class="restaurant restaurant2"><span>KFC</span><div class="spanBackground"></div><button type="button" class="btn btn-primary">Check It Out</button></div>
+          <div class="restaurant restaurant3"><span>Pizza Hut</span><div class="spanBackground"></div><button type="button" class="btn btn-primary">Check It Out</button></div>
+          <div class="restaurant restaurant4"><span>Black Lotus</span><div class="spanBackground"></div><button type="button" class="btn btn-primary">Check It Out</button></div>
+          <div class="restaurant restaurant5"><span>Punjabi Dabha</span><div class="spanBackground"></div><button type="button" class="btn btn-primary">Check It Out</button></div>
+          <div class="restaurant restaurant6"><span>View All</span><div class="spanBackground"></div><button type="button" class="btn btn-primary">Check It Out</button></div>
+          <div class="restaurant restaurant1"><span>Dominos</span><div class="spanBackground"></div><button type="button" class="btn btn-primary">Check It Out</button></div>
+          <div class="restaurant restaurant2"><span>KFC</span><div class="spanBackground"></div><button type="button" class="btn btn-primary">Check It Out</button></div>
+          <div class="restaurant restaurant3"><span>Pizza Hut</span><div class="spanBackground"></div><button type="button" class="btn btn-primary">Check It Out</button></div>
+          <div class="restaurant restaurant4"><span>Black Lotus</span><div class="spanBackground"></div><button type="button" class="btn btn-primary">Check It Out</button></div>
+          <div class="restaurant restaurant5"><span>Punjabi Dabha</span><div class="spanBackground"></div><button type="button" class="btn btn-primary">Check It Out</button></div>
+          <div class="restaurant restaurant6"><span>View All</span><div class="spanBackground"></div><button type="button" class="btn btn-primary">Check It Out</button></div>
+        </div>
+      </div> -->
+
+
+      <div class="container c4">
+        <h1 class="text-center h1_2" >Get Our App</h1>
+        <div class="c4_">
+          <div class="c4_2">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="transition: transform .1s ease, opacity .1s ease-out">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/static/images/ourApp1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/static/images/ourApp2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/static/images/ourApp3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="c4_1">
+          <p style="font-size: 4.5rem; margin: 4rem 0rem;">We will send you a download link on mail you enter below</p>
+          <h1>Enter Mail-id</h1>
+          <form method="POST" action="">
+            {% csrf_token %}
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+          <input type="email" id="newsletter1" class="form-control" placeholder="Email address" name="email" style="font-size: 2rem; margin-top: 3rem; border: 2px solid black;">
+          <button class="btn btn-primary getApp" type="submit" style="font-size: 2rem; margin-top: 1rem;">Get Link</button>
+          </form>
+          <h1 style="margin: 2rem 0;">Or click Below to download</h1>
+          <div style="display: flex; justify-content: space-evenly; width: 50%;">
+            <a href="/" style="width: 100%;"><img src="/static/images/android.png" alt="" style="width: 100%;"></a> &nbsp;
+            <a href="/" style="width: 100%;"><img src="/static/images/apple.png" alt="" style="width: 100%;"></a>
+          </div>
+        </div>
+        </div>
+      </div>
+
+    <!--Navbar code starts here-->
+    <div class="container-fluid mt-0 pt-0" style="font-size: 2rem; color: white; border-top: 3px solid black;
+    background-color: rgb(51, 45, 45);">
+      <footer class="py-5">
+        <p class="float-end">
+          <a href="" class="backToTop btn btn-light" style="position: relative; right: 4rem;">Back to top</a>
+        </p>
+        <div class="row">
+
+          <div class="col-2">
+            <h1 class="text-center" style="color: rgb(255, 255, 255); font-weight: 600;">Social Meadis</h1>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2" style="display: flex; justify-content: center;">
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+              </li>
+              <li class="nav-item mb-2" style="display: flex; justify-content: center; margin: 20px">
+                <a href="https://twitter.com/" class="fa fa-twitter"></a>
+              </li>
+              <li class="nav-item mb-2" style="display: flex; justify-content: center; margin: 20px">
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-2">
+            <h1 class="text-center" style="color: rgb(255, 255, 255); font-weight: 600;">Usefull Links</h1>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="/" class="nav-link p-0 text-muted" style="color: white !important; display: flex; justify-content: center; margin: 10px">Home<a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="contactUs/" class="nav-link p-0 text-muted" style="color: white !important; display: flex; justify-content: center;">Contact Us<a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="/about" class="nav-link p-0 text-muted" style="color: white !important; display: flex; justify-content: center; margin: 10px">About Us</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="" class="nav-link p-0 text-muted" style="color: white !important; display: flex; justify-content: center;">Join us</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- <div class="col-2">
+            <h1 class="text-center" style="color: rgb(255, 255, 255); font-weight: 600;">Hire Us</h1>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2" style="display: flex; justify-content: center;">
+                <img src="/static/images/hireUs.png" alt="" style="width: 3vw;">
+              </li>
+            </ul>
+          </div> -->
+
+          <div class="col-5 " style="margin-left: 10rem;">
+            <form method="" action="">
+              <!-- {% csrf_token %} -->
+              <h1 style="font-size: 3rem; font-weight: 700;">Subscribe to get daily updates</h1>
+              <p>If you Subscribe we will send you mail on every update we have in your area which may be tastefull to you</p>
+              <div class="d-flex w-100 gap-2" style="font-size: 2rem;">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input type="email" id="newsletter1" class="form-control" placeholder="Email address" name="email" style="font-size: 2rem;">
+                <button id=" butoooon" class="btn btn-primary" type="submit" style="font-size: 2rem;">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div>
+            &copy; 2022 Company, Inc. All rights reserved.
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="{% static 'index.js'%}"></script>
+    
+    
+
+  </body>
+</html>
+
+
+<!-- <div class="cardHover1">
+  <div class="restaurant restaurant1"><span>Dominos</span><div class="spanBackground"></div><button type="button" class="btn btn-primary">Check It Out</button></div>
+  <div class="restaurant restaurant2"><span>KFC</span><div class="spanBackground"></div><button type="button" class="btn btn-primary">Check It Out</button></div>
+  <div class="restaurant restaurant3"><span>Pizza Hut</span><div class="spanBackground"></div><button type="button" class="btn btn-primary">Check It Out</button></div>
+  <div class="restaurant restaurant4"><span>Black Lotus</span><div class="spanBackground"></div><button type="button" class="btn btn-primary">Check It Out</button></div>
+  <div class="restaurant restaurant5"><span>Punjabi Dabha</span><div class="spanBackground"></div><button type="button" class="btn btn-primary">Check It Out</button></div>
+  <div class="restaurant restaurant6"><span>View All</span><div class="spanBackground"></div><button type="button" class="btn btn-primary">Check It Out</button></div>
+</div> -->
+
+
+
+
+<!-- <div class="css-typing">
+  <p>
+    Typed text 1
+  </p>
+  <p>
+    Typed text 2 Longer
+  </p>
+  <p>
+    Typed text 3
+  </p>
+</div> -->
+
+
+
+<!-- .css-typing p {
+  border-right: .15em solid orange;
+  font-family: "Courier";
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.css-typing p:nth-child(1) {
+  width: 7.3em;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(2) {
+  width: 11.5em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(3) {
+  width: 7.3em;
+  opacity: 0;
+  -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+  animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+} -->

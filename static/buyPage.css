@@ -1,0 +1,29 @@
+.topH1{
+    text-align: center;
+    font-size: 7rem;
+    padding-bottom: 3rem;
+}
+
+.c1{
+    padding: 10rem 5rem;
+}
+
+.addButton{
+    font-size: 1.5rem !important;
+    float: right;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+}
+
+.saveButton{
+    position: relative;
+    top: -8rem;
+    left: 104.8rem;
+}
+.card{
+    margin: 10rem 0;
+    border-radius: 2rem;
+}
+.card img{
+    border-radius: 2rem;
+}

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    {% load static %}
+    
+    <link rel="stylesheet" href="{% static 'index.css'%}">
+
+    <title>Welcome</title>
+  </head>
+  <body>
+    <div id="loadingScreen" class="loading-1">
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
+    <div class="prog"><div class="progressBar"></div></div>
+
+    <center>
+        <header class="" style="z-index: 999;">
+            <nav>
+                <ul>
+                    <li class="navbarLink1"><a href="/" style= "color: white ; text-decoration: none; font-family: 'Times New Roman', Times, serif;">Zinggy</a></li>
+                    <li class="navbarLink2">
+                      <div class="searchBar">
+                        <input class="form-control " type="search" placeholder="What Are You Craving For..." aria-label="Search"><button class="btn btn-outline-success" type="submit">Search</button>
+                    </div>
+                    </li>
+                    <li class="navbarLink3"><a href="/myBasket" class="fa fa-shopping-cart"></a><br></li>
+                    <li class="navbarLink4"><button type="button" class="btn btn-primary"><a class="navbar-brand m-0" href="/admin" style="color: white;">Login</a></button></li>
+                </ul>
+            </nav>
+        </header>
+</center>
+
+    <!--Navbar code starts here-->
+    <div class="container-fluid mt-0 pt-0" style="font-size: 2rem; color: white; border-top: 3px solid black;
+    background-color: rgb(51, 45, 45);">
+      <footer class="py-5">
+        <p class="float-end">
+          <a href="" class="backToTop btn btn-light" style="position: relative; right: 4rem;">Back to top</a>
+        </p>
+        <div class="row">
+
+          <div class="col-2">
+            <h1 class="text-center" style="color: rgb(255, 255, 255); font-weight: 600;">Social Meadis</h1>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2" style="display: flex; justify-content: center;">
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+              </li>
+              <li class="nav-item mb-2" style="display: flex; justify-content: center; margin: 20px">
+                <a href="https://twitter.com/" class="fa fa-twitter"></a>
+              </li>
+              <li class="nav-item mb-2" style="display: flex; justify-content: center; margin: 20px">
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-2">
+            <h1 class="text-center" style="color: rgb(255, 255, 255); font-weight: 600;">Usefull Links</h1>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="/" class="nav-link p-0 text-muted" style="color: white !important; display: flex; justify-content: center; margin: 10px">Home<a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="/contact" class="nav-link p-0 text-muted" style="color: white !important; display: flex; justify-content: center;">Contact Us<a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="/about" class="nav-link p-0 text-muted" style="color: white !important; display: flex; justify-content: center; margin: 10px">About Us</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="" class="nav-link p-0 text-muted" style="color: white !important; display: flex; justify-content: center;">Join us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-2">
+            <h1 class="text-center" style="color: rgb(255, 255, 255); font-weight: 600;">Hire Us</h1>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2" style="display: flex; justify-content: center;">
+                <img src="/static/images/hireUs.png" alt="" style="width: 3vw;">
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-5 offset-3 m-0">
+            <form method="post" action="/sub">
+              <!-- {% csrf_token %} -->
+              <h1 style="font-size: 3rem; font-weight: 700;">Subscribe to get daily updates</h1>
+              <p>If you Subscribe we will send you mail on every update we have in your area which may be tastefull to you</p>
+              <div class="d-flex w-100 gap-2" style="font-size: 2rem;">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input type="email" id="newsletter1" class="form-control" placeholder="Email address" name="email" style="font-size: 2rem;">
+                <button id=" butoooon" class="btn btn-primary" type="submit" style="font-size: 2rem;">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div>
+            &copy; 2022 Company, Inc. All rights reserved.
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="{% static 'index.js'%}"></script>
+    
+    
+
+  </body>
+</html>>
